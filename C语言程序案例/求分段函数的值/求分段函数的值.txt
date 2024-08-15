@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main()
+{ float x,y;
+  scanf("%f",&x);
+if(1<=x&& x<10)
+  { y=x*x-2*x+1;
+      printf("y=%.2f\nx=%.2f,1<=x<10\n",y,x);
+  }
+  else
+  { y=0;
+       if(x<1)
+         printf("y=%.2f\nx=%.2f,x<1\n",y,x);
+       else
+          printf("y=%.2f\nx=%.2f,x>=10\n",y,x);
+  }
+  }  

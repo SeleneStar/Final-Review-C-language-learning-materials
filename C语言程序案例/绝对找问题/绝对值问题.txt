@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+  float x,y;
+  scanf("%f,%f",&x,&y);
+  x=fabs(x);
+  y=fabs(y);
+  if((x-2)*(x-2)+(y-2)*(y-2)>1)
+    printf("该点高度为0米");
+  else
+    printf("该点高度为10米");
+}

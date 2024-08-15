@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main(void)
+{
+  float x,y;
+  scanf("%f%f",&x,&y);
+  if(x==0)
+    printf("(%.2f,%.2f)在y座标轴上!\n",x,y);
+  else if(y==0)
+    printf("(%.2f,%.2f)在x座标轴上!\n",x,y);
+  else if(x>0&&y<0)
+    printf("(%.2f,%.2f)在第四象限!\n",x,y);
+  else if(x>0&&y>0)
+    printf("(%.2f,%.2f)在第一象限!\n",x,y);
+  else if(x<0&&y<0)
+    printf("(%.2f,%.2f)在第三象限!\n",x,y);
+  else
+    printf("(%.2f,%.2f)在第二象限!\n",x,y);

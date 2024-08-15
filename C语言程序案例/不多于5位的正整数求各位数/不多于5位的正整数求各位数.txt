@@ -1,0 +1,36 @@
+#include<stdio.h>
+void main()
+{
+  int a,b,c,d,e,x, y,weishu;
+  scanf("%d",&x);
+  a=x/10000;
+  b=x/1000%10;
+  c=x/100%10;
+  d=x/10%10;
+  e=x%10;
+  if(a!=0) 
+  {weishu = 5;
+	  printf("位数:%d", weishu);
+  printf("\n每位数字为:%d,%d,%d,%d,%d",a,b,c,d,e);
+   printf("\n逆序数字为:%d",10000*e+1000*d+100*c+10*b+a);}
+  else if(b!=0) 
+  { weishu = 4;
+	  printf("位数:%d", weishu);
+ printf("\n每位数字为:%d,%d,%d,%d",b,c,d,e);
+   printf("\n逆序数字为:%d",1000*e+100*d+10*c+b);}
+  else if(c!=0)
+  {weishu=3;
+	  printf("位数:%d", weishu);
+    printf("\n每位数字为:%d,%d,%d",c,d,e);
+   printf("\n逆序数字为:%d",100*e+10*d+c);}
+  else if(d!=0)
+  {weishu=2;
+	  printf("位数:%d", weishu);
+    printf("\n每位数字为:%d,%d",d,e);
+   printf("\n逆序数字为:%d",10*e+d);}
+  else
+  {weishu=1;
+	  printf("位数:%d", weishu);
+  printf("\n每位数字为:%d",e);
+  printf("\n逆序数字为:%d",e);}
+}
